@@ -2,11 +2,15 @@
   "name": "node-crud-api",
   "version": "1.0.0",
   "description": "A simple CRUD API using Node.js and Express.js",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
