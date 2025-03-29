@@ -1,16 +1,12 @@
-const express = require("express");
+import express from 'express';
+
 const app = express();
+const PORT = process.env.PORT || 3000;
 
-// Middleware (optional)
-app.use(express.json());
-
-// Default route
-app.get("/", (req, res) => {
-  res.send("Hello, your API is running!");
+app.get('/', (req, res) => {
+    res.send('Hello World');
 });
 
-// 🔥 Use Render's assigned port instead of a fixed one
-const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
